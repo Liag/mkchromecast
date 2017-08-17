@@ -95,6 +95,7 @@ else:
             '-preset', 'ultrafast',
             '-f', 'mp4',
             '-movflags', 'frag_keyframe+faststart ',
+            '-vf', 'subtitles='+input_file,
             'pipe:1'
          ]
         """
@@ -113,6 +114,7 @@ else:
             #'-b', '900k',
             '-f', 'mp4',
             '-movflags', 'frag_keyframe+faststart ',
+            '-vf', 'subtitles='+input_file,
             'pipe:1'
         ]
 
